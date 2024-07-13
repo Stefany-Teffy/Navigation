@@ -47,7 +47,22 @@ const meuestilo = StyleSheet.create({
     alignItems: "center",
     borderRadius: 20,
     marginBottom: 80,
-    marginTop: 40,
+    marginTop: 65,
+    position: "relative",
+  },
+  cantoPreto: {
+    position: "absolute",
+    top: -42,
+    right: 0,
+    width: 90,
+    height: 90,
+  },
+  passaro: {
+    position: "absolute",
+    top: 185,
+    left: -37,
+    width: 120,
+    height: 120,
   },
   textoQuadradoGrande: {
     fontSize: 18,
@@ -63,7 +78,7 @@ const meuestilo = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     width: "100%",
-    marginBottom: 50, // linhas de quadrados pequenos
+    marginBottom: 40,
   },
   quadradoMenor: {
     backgroundColor: "#1A2A55",
@@ -77,6 +92,65 @@ const meuestilo = StyleSheet.create({
   },
   icone: {
     color: "#fff",
+  },
+  // Estilos para a tela de Turismo
+  turismoContainer: {
+    flex: 1,
+    backgroundColor: "#1D154E",
+    alignItems: "center",
+    paddingTop: 0,
+    padding: 0,
+  },
+  turismoMapa: {
+    width: "90%",
+    height: "50%",
+    marginTop: 50,
+  },
+  turismoImagemContainer: {
+    position: "absolute",
+    width: "90%",
+    height: "50%",
+    marginTop: 50,
+  },
+  turismoImagemDetalhe: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
+  },
+  turismoBotaoFechar: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    backgroundColor: "#fff",
+    borderRadius: 20,
+    padding: 5,
+  },
+  turismoTextoBotaoFechar: {
+    color: "#000",
+    fontWeight: "bold",
+  },
+  turismoDescricaoContainer: {
+    width: "90%",
+    height: "30%",
+    marginTop: 60,
+    padding: 12,
+    backgroundColor: "rgba(217, 217, 217, 0.42)",
+    borderRadius: 10,
+    alignItems: "justify",
+  },
+  turismoTituloDetalhe: {
+    fontSize: 15,
+    color: "#fff",
+    fontWeight: "bold",
+    marginTop: 8,
+    marginBottom: 17,
+    textAlign: "justify",
+  },
+  turismoDescricaoDetalhe: {
+    fontSize: 14,
+    color: "#fff",
+    textAlign: "justify",
+    lineHeight: 22,
   },
 });
 

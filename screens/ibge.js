@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity, Image } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import meuestilo from "../meuestilo";
 
@@ -26,16 +26,16 @@ const dadosIBGE = [
   {
     id: 4,
     icone: "school",
-    titulo: "Escolarização",
+    titulo: "Escolarização\n",
     texto: "Escolarização\n\n97,4%",
   },
   {
     id: 5,
     icone: "medal",
     titulo: "IDHM\n",
-    texto: "Índice de Desenvolvimento Humano Municipal Municipals\n\n 0,74",
+    texto: "IDHM\n\n 0,74",
   },
-  { id: 6, icone: "cash", titulo: "PIB\n", texto: "PIB\n\nR$ 51.003,6 R$" },
+  { id: 6, icone: "cash", titulo: "PIB\n", texto: "PIB\n\nR$ 51.003,60" },
 ];
 
 const IBGE = () => {
@@ -44,6 +44,14 @@ const IBGE = () => {
   return (
     <View style={meuestilo.ibgeContainer}>
       <View style={meuestilo.quadradoGrande}>
+        <Image
+          source={require("../assets/detalhe.png")}
+          style={meuestilo.cantoPreto}
+        />
+        <Image
+          source={require("../assets/passaro.png")}
+          style={meuestilo.passaro}
+        />
         <Icon name={selecionado.icone} size={50} color="#fff" />
         <Text style={meuestilo.textoQuadradoGrande}>{selecionado.texto}</Text>
       </View>
